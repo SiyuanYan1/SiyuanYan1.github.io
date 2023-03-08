@@ -120,10 +120,6 @@
 <head>
 	<title>Trust_Derm</title>
 
-	
-
-
-
 <!-- 	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
 
 	<meta property="twitter:title" content="Towards Trustable Skin Cancer Diagnosis via Rewriting Model's Decision." />
@@ -299,7 +295,7 @@
 			<tr>
 				<td width=260px>
 					<center>
-						<img class="round" style="width:900px" src="./images/method.png"/>
+						<img class="round" style="width:800px" src="./images/method.png"/>
 					</center>
 				</td>
 			</tr>
@@ -324,11 +320,13 @@
 				</td>
 			</tr>
 		</table>
+		<table align=center width=850px>
 			<tr>
 				<td>
 				Global analysis of the models' behavior within datasets using GCCD. The left graph is the tSNE of spectral clustering using GradCAMs of a ResNet50 within ISIC2019 and ISIC2020. The right one is the tSNE of spectral clustering using GradCAMs of a VGG16 within the SynthDermdataset.
 				</td>
 			</tr>
+			</table>
 
 	</center>
 
@@ -339,17 +337,18 @@
 			<tr>
 				<td width=260px>
 					<center>
-						<img class="round" style="width:1100px" src="./images/exp1.png"/>
+						<img class="round" style="width:1000px" src="./images/exp1.png"/>
 					</center>
 				</td>
 			</tr>
 		</table>
+			<table align=center width=850px>
 			<tr>
 				<td>
 				The global explanation of the model’s behavior on the melanoma (dark corners) dataset of ConfDerm. In the left two figures, either the concept activation or logical rule shows that the model is confounded by the concept of the dark corners when predicting melanoma. In the right two figures, after the interaction, the model does not predict melanoma based on the dark corners, and it predicts melanoma based on meaningful clinical concepts.
 				</td>
 			</tr>
-
+</table>
 	</center>
 
 		<center><h1>Quantitative Result</h1></center>
@@ -358,16 +357,18 @@
 			<tr>
 				<td width=260px>
 					<center>
-						<img class="round" style="width:600px" src="./images/exp2.png"/>
+						<img class="round" style="width:550px" src="./images/exp2.png"/>
 					</center>
 				</td>
 			</tr>
 		</table>
+			<table align=center width=850px>
 			<tr>
 				<td>
 				Performance improvement on confounded class when removing different confounded classes using XIL in five confounded datasets in the ConfDerm dataset.
 				</td>
 			</tr>
+			</table>
 
 	</center>
 
